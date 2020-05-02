@@ -1,6 +1,6 @@
 {
     "host": "localhost",
-    "databasename": "greta",
+    "databasename": "autocomplete",
     "charset": "utf8",
     "user": "root",
     "password": "",

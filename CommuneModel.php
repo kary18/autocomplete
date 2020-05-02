@@ -1,7 +1,7 @@
 <?php
-
+//ma modification est dans la deuxieme ligne order by 
 define("QUERY_COMMUNE_READ",            "SELECT cp, commune, dep, dep_code, latitude, longitude FROM commune WHERE cp = :cp AND commune=:commune");
-define("QUERY_COMMUNE_CP_INDEX",        "SELECT cp, commune FROM commune WHERE cp LIKE :cp LIMIT 10");
+define("QUERY_COMMUNE_CP_INDEX",        "SELECT cp, commune FROM commune WHERE cp LIKE :cp  Order by CASE commune WHEN 000 THEN 00 Else 0 END ASC   LIMIT 10");
 define("QUERY_COMMUNE_COMMUNE_INDEX",   "SELECT cp, commune FROM commune WHERE commune LIKE :commune LIMIT 10");
 
 class CommuneModel

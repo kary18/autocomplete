@@ -7,11 +7,13 @@
     </head>
     <body>
         <h1>Chercher une commune</h1>
-        <form action="/index.php" method="post" name="form-loc" id="form-loc">
+        <form action="../autocomplete/index.php" method="post" name="form-loc" id="form-loc">
             <label for="localisation">Localisation</label>
-            <input type="text" id="loc-input" name="loc-input" list="loc-datalist" placeholder="Ville ou Code postal...">
+            <input type="text" id="loc-input" name="loc-input" list="loc-datalist" placeholder="Ville ou Code postal..."><br><br>
             <datalist id="loc-datalist">
             </datalist>
+            <!-- input lecture seul -->
+            <input type="text" id="loc-input" name="loc-input" value="liste" readonly><br><br>
             <input type="submit" value="OK"  id="bouton-submit">
         </form>
 
